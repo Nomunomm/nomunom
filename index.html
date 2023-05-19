@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: teal;
+    overflow: hidden;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 58px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    top: 50%;
+}
+
+.container {
+    border: 4px;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+    padding-left: 50px;
+    background-color: rgba(rgb(0, 85, 85), 0.8);
+}
+
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 20px; /* Adds a gap of 20 pixels between columns */
+    justify-items: center; /* Centers the grid items horizontally */
+    align-items: center; /* Centers the grid items vertically */
+    padding: 20px; /* Adds padding around the grid container */
+}
+
+.logo {
+    grid-column: 1 / 4; /* Spans across all 3 columns */
+    text-align: center;
+}
+
+.column {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    padding-left: 100px;
+    text-align: center;
+    background-color: rgb(107, 107, 107); /* Sets a background color for the columns */
+    border-radius: 10px; /* Adds rounded corners to the columns */
+    padding: 20px; /* Adds padding inside the columns */
+}
+
+.crc {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular container */
+}
+
+.title{
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/icpep_3.jpg" style="width:100%">
+      <div class="text">Welcome to CpE Portal</div>
+      <a href="what_cpe.html" class="learn-more-btn lmbtn">Learn More</a> 
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/icpep_1.jpg" style="width:100%">
+      <div class="text">Welcome to CpE Portal</div>
+      <a href="what_cpe.html" class="learn-more-btn lmbtn">Learn More</a> 
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/cpe_fest_1.jpg" style="width:100%">
+      <div class="text">Welcome to CpE Portal</div>
+      <a href="what_cpe.html" class="learn-more-btn lmbtn">Learn More</a> 
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/cpe_fest_1.jpg" style="width:100%">
+        <div class="text">Welcome to CpE Portal</div>
+        <a href="what_cpe.html" class="learn-more-btn lmbtn">Learn More</a> 
+      </div>
+  </div>
+
+  <br>
+
+  <div class="dot-container">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <script src="myscripts.js"></script>
+</body>
+</html>

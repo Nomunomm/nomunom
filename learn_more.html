@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="learn_more.html" class="logo">About Us</a>
+    </header>
+
+    <section class="content-section">
+        <div class="container" onclick="toggleDropdown(this)">
+            <div class="thumbnail">
+                <img src="images/icpep_2.jpg" alt="About Us">
+            </div>
+            <div class="content">
+                <h2>About Us</h2>
+                <div class="subtext-dropdown">
+                    <p>
+                        We are dedicated to empowering individuals with the knowledge and skills necessary to thrive in the dynamic field of computer engineering. Our mission is to provide a comprehensive learning experience that combines theoretical foundations with hands-on practicality, enabling our students to excel in their careers and make significant contributions to the ever-evolving technological landscape.
+                    </p>
+                    <p>
+                        Led by a team of passionate and experienced professionals, our course offers a structured curriculum designed to equip students with a deep understanding of computer engineering principles. Whether you're a high school graduate exploring your future prospects or a working professional seeking to enhance your expertise, our program caters to learners of all levels.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" onclick="toggleDropdown(this)">
+            <div class="thumbnail">
+                <img src="images/job.jpg" alt="Job">
+            </div>
+            <div class="content">
+                <h2>Job Opportunities</h2>
+                <div class="subtext-dropdown">
+                    <ul class="job-list">
+                        <li>
+                            <img class="opp" src="images/hardware_engineer.jpeg" alt="Hardware Engineer">
+                            <span style="text-align: center;">Hardware Engineer</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/software_engineer.jpg" alt="Software Engineer">
+                            <span style="text-align: center;">Software Engineer</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/network-engineer.jpg" alt="Network Engineer">
+                            <span style="text-align: center;">Network Engineer</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/embedded-systems-engineer.png" alt="Embedded Systems Engineer">
+                            <span style="text-align: center;">Embedded Systems Engineer</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/systems_analyst.jpg" alt="Systems Analyst">
+                            <span style="text-align: center;">Systems Analyst</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/data-scientist.jpg" alt="Data Scientist">
+                            <span style="text-align: center;">Data Scientist</span>
+                        </li>
+                        <li>
+                            <img class="opp" src="images/cybersecurity-analyst.jpg" alt="Cybersecurity Analyst">
+                            <span style="text-align: center;">Cybersecurity Analyst</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" onclick="toggleDropdown(this)">
+            <div class="thumbnail">
+                <img src="images/Why.jpg" alt="Why Us?">
+            </div>
+            <div class="content">
+                <h2>Why Us?</h2>
+                <div class="subtext-dropdown">
+                    <ul>
+                        <li>
+                            <strong>Expert Faculty:</strong> Our course is taught by industry veterans and seasoned academics who bring a wealth of real-world experience to the classroom. Their guidance and mentorship will help you navigate the complexities of computer engineering and stay up-to-date with the latest advancements in the field.
+                        </li><br>
+                        <li>
+                            <strong>Comprehensive Curriculum:</strong> We have carefully curated a curriculum that encompasses the core concepts of computer engineering, including digital logic design, programming, computer architecture, networking, operating systems, and much more. Our aim is to provide you with a solid foundation that prepares you for a wide range of career opportunities.
+                        </li><br>
+                        <li>
+                            <strong>Practical Approach:</strong> We believe in learning by doing. Through hands-on projects, lab exercises, and collaborative assignments, you will have ample opportunities to apply your knowledge and develop essential problem-solving skills. Our emphasis on practicality ensures that you graduate with the confidence to tackle real-world challenges.
+                        </li><br>
+                        <li>
+                            <strong>Networking and Industry Connections:</strong> Throughout your journey with us, you will have the chance to connect with industry professionals, attend workshops, and participate in networking events. These interactions will not only broaden your perspective but also pave the way for potential internships or employment opportunities.
+                        </li><br>
+                        <li>
+                            <strong>Supportive Learning Environment:</strong> We foster a nurturing and inclusive environment where you can thrive academically and personally. Our faculty and staff are committed to your success and will go the extra mile to ensure that you receive the support you need to reach your full potential.
+                        </li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Computer Engineering Institute. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(container) {
+            container.classList.toggle('active');
+            var subtext = container.querySelector('.subtext-dropdown');
+            subtext.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
